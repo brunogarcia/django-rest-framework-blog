@@ -14,14 +14,22 @@ $ pipenv shell
 ## BD setup
 
 ```bash
-(newspaper) $ python manage.py migrate
-(newspaper) $ python manage.py createsuperuser
+(blog) $ python manage.py migrate
+(blog) $ python manage.py createsuperuser
 ```
 
 ## Run local server
 
 ```bash
-(newspaper) $ python manage.py runserver
+(blog) $ python manage.py runserver
+```
+
+## Generate API schema
+
+### Static schema
+
+```bash
+(blog) $ python manage.py generateschema > openapi-schema.yml
 ```
 
 ## Endpoints
