@@ -20,6 +20,8 @@ $ pipenv shell
 
 ## Run local server
 
+[http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+
 ```bash
 (blog) $ python manage.py runserver
 ```
@@ -31,15 +33,3 @@ $ pipenv shell
 ```bash
 (blog) $ python manage.py generateschema > openapi-schema.yml
 ```
-
-## Endpoints
-
-| Endpoint | HTTP Verb |
-|----------|---------|
-| api/v1/ | GET |
-| api/v1/:pk/ | GET |
-| api/v1/rest-auth/registration | POST |
-| api/v1/rest-auth/login | POST |
-| api/v1/rest-auth/logout | GET |
-| api/v1/rest-auth/password/reset | POST |
-| api/v1/rest-auth/password/reset/confirm | POST |
